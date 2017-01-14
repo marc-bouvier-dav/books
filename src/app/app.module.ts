@@ -4,10 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { BookComponent } from './book/book.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BookComponent,
   ],
   imports: [
     BrowserModule,
@@ -15,6 +17,7 @@ import { AppComponent } from './app.component';
     HttpModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [
+  AppComponent,BookComponent]
 })
 export class AppModule { }
